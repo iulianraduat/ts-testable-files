@@ -1,0 +1,23 @@
+{
+  "name": "ts-testable-files",
+  "version": "1.0.0",
+  "description": "Testable TypeScript files for 3TG from 3tg.dev",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:dbg": "node --trace-warnings dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "@types/pg": "^8.18.0",
+    "rimraf": "^6.1.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
